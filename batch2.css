@@ -10,14 +10,26 @@ body{
     font-weight: bolder;
 } */
 
-/* img{
-    height: 500px;
-    width: 500px;
-    border-radius: 100px;
+img{
+    height: auto;
+    width: 100%;
+    /* border-radius: 100px; */
+}
+/* @media (min-width:1024px){
+    img{
+        height:500px;
+        weight:500px;
+    }
 } */
+ @media (max-width:600px){
+    img{
+        height:auto;
+        weight:100%;
+    }
+}
 
 video{
-    height: 500px;
+    width: 100%;
 }
 
 ol{
@@ -49,8 +61,15 @@ button{
 }
 nav{
     display:flex;
-    flex-direction: row;
-    gap:50px;
+    flex-direction: column;
+    /* gap:50px; */
+}
+@media(min-width:1024px){
+    nav{
+        display:flex;
+        flex-direction: row;
+        gap:100px;
+    }
 }
 #p1{
     font-style: normal;
@@ -64,7 +83,14 @@ nav{
 }
 .grid{
     display:grid;
-    grid-template-columns: 33% 33% 33%;
+    /* grid-template-columns: 33% 33% 33%; */
+}
+@media(min-width:1024px){
+    .grid{
+        display:grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+    
 }
 /* #one{
     grid-row:1/2;
